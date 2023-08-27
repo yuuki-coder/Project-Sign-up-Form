@@ -1,0 +1,97 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(assets/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background: no-repeat url("assets/img1.avif");
+  height: 100vh;
+  background-size: cover;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.logo {
+  font-size: 7rem;
+  font-family: norse-bold;
+  position: absolute;
+  top: calc(100% / 3 - 133px);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.credits p {
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.credits p a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.logo img {
+  height: 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.form-container1 {
+  background-color: #f9fafb;
+  height: calc(100% / 3);
+  width: 100%;
+  position: relative;
+}
+
+.form-text {
+  width: 70%;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.form-text p {
+  margin-top: 1rem;
+}
+
+.form-line1,
+.form-line2,
+.form-line3 {
+  display: flex;
+}
+
+.form-container2 {
+  height: calc(100% / 3);
+  border: 1px solid black;
+  margin-left: 10%;
+  width: 70%;
+}
