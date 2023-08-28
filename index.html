@@ -23,57 +23,90 @@
       <div class="form">
         <div class="form-container1">
           <div class="form-text">
-            <h3>
+            <h4>
               This is not a real online service! You know you need something
               like this in your life to help you realize your deepest dreams.<br />
               Sign up now to get started.
 
               <p>You know you want to.</p>
-            </h3>
+            </h4>
           </div>
         </div>
         <div class="form-container2">
-          <h2>Lets do this!</h2>
+          <h3>Lets do this!</h3>
 
           <form action="get">
             <div class="form-line1">
               <div class="firstName">
-                <label for="firstName"
-                  >first name <br /><input type="text"
+                <label for="userFirstName"
+                  >first name <br /><input
+                    type="text"
+                    id="userFirstName"
+                    required minlength="4" maxlength="15" 
+                    placeholder="Nome"
                 /></label>
               </div>
 
               <div class="lastName">
-                <label for="lastName"
-                  >last name <br /><input type="text"
+                <label for="userLastName"
+                  >last name <br /><input
+                    type="text"
+                    id="userLastName"
+                    minlength="4" maxlength="15" 
+                    placeholder="Sobrenome"
+                    required
                 /></label>
               </div>
             </div>
             <div class="form-line2">
-              <div class="firstName">
-                <label for="firstName">e-mail<br /><input type="text" /></label>
+              <div class="email">
+                <label for="userEmail"
+                  >e-mail<br /><input type="email" id="userEmail" 
+                  placeholder = "fulano@gmail.com "required
+                /></label>
               </div>
 
-              <div class="lastName">
-                <label for="lastName"
-                  >phone number <br /><input type="text"
+              <div class="phoneNumber">
+                <label for="userPhoneNumber"
+                  >phone number <br /><input
+                    type="tel"
+                    id="userPhoneNumber" 
+                    pattern="[0-9]{5}-[0-9]{4}" placeholder="12345-6789" 
+                    required
                 /></label>
               </div>
             </div>
             <div class="form-line3">
-              <div class="firstName">
-                <label for="firstName"
-                  >password <br /><input type="text"
+              <div class="password">
+                <label for="userPassword"
+                  >password <br /><input
+                    type="password"
+                    id="userPassword"
+                    class="error"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="A senha deve conter pelo menos 1 número, 1 letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres. "
+                    required
+                    placeholder="Senha" 
                 /></label>
               </div>
 
-              <div class="lastName">
-                <label for="lastName"
-                  >confirm password <br /><input type="text"
+              <div class="confirmPassword">
+                <label for="confirmUserPassword"
+                  >confirm password <br /><input
+                    type="password"
+                    id="confirmUserPassword"
+                    class="error"
+                    placeholder="Confirmar senha" 
+                    required
                 /></label>
               </div>
             </div>
-          </form>
+          
+        </div>
+        <div class="userAccount form-container1">
+          <input type="submit" value="Create Account" />
+        </form>
+          <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </div>
     </div>
