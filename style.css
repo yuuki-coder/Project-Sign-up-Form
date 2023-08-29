@@ -113,7 +113,6 @@
 .form-container2 input {
   border:1px solid #E5E7EB;
   border-radius: 3px;
-  margin-bottom: 2rem;
   position:relative;
  
   
@@ -167,12 +166,12 @@
 
 
 .error {
-  position:relative;
+  margin-top:0.2rem;
 color:red;
-font-size: 0.7rem;
+font-size: 0.8rem;
 font-weight: bold;
-bottom:1.8rem;
 width:30ch;
+height:2rem;
 
 }
 
