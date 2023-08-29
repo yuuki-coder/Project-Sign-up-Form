@@ -1,121 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project-Sign-up-Form</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="background">
-        <div class="logo">
-          <img src="assets/odin-lined.png" alt="Odin Project logo" />
-          ODIN
-        </div>
-        <div class="credits">
-          <p>
-            Photo by <a href="http://">Halie West</a> on
-            <a href="http://"> Unsplash</a>
-          </p>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project-Sign-up-Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="background">
+      <div class="logo">
+        <img src="assets/odin-lined.png" alt="Odin Project logo" />
+        ODIN
       </div>
-      <div class="form">
-        <div class="form-container1">
-          <div class="form-text">
-            <h4>
-              This is not a real online service! You know you need something
-              like this in your life to help you realize your deepest dreams.<br />
-              Sign up now to get started.
-
-              <p>You know you want to.</p>
-            </h4>
-          </div>
-        </div>
-        <div class="form-container2">
-          <h2>Lets do this!</h2>
-          
-            <form action="action_page.php" method="get"  id="form" novalidate>
-              <div class="form-line1">
-        
-              <div class="firstName">
-                <label for="userFirstName"
-                  >first name </label> <br /><input
-                    type="text"
-                    id="userFirstName"
-                    required minlength="4" maxlength="15" 
-                    placeholder="Nome"
-                />
-                <div class="error"></div>
-              </div>
-    
-
-              <div class="lastName">
-                <label for="userLastName"
-                  >last name</label><br /><input
-                    type="text"
-                    id="userLastName"
-                    minlength="4" maxlength="15" 
-                    placeholder="Sobrenome"
-                    required
-                />
-                <div class="error"></div>
-              </div>
-            </div>
-            <div class="form-line2">
-              <div class="email">
-                <label for="userEmail"
-                  >e-mail</label><br /><input type="email" id="userEmail" 
-                  placeholder = "fulano@gmail.com "required
-                />
-                <div class="error"></div>
-              </div>
-
-              <div class="phoneNumber">
-                <label for="userPhoneNumber"
-                  >phone number</label> <br /><input
-                    type="tel"
-                    id="userPhoneNumber" 
-                     placeholder="12345-6789" 
-                    required
-                />
-                <div class="error"></div>
-              </div>
-            </div>
-            <div class="form-line3">
-              <div class="password">
-                <label for="userPassword"
-                  >password</label> <br /><input
-                    type="password"
-                    id="userPassword"
-                    title="A senha deve conter pelo menos 1 número, 1 letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres. "
-                    required
-                    placeholder="Senha" 
-                />
-                <div class="error"></div>
-              </div>
-
-              <div class="confirmPassword">
-                <label for="confirmUserPassword"
-                  >confirm password</label> <br /><input
-                    type="password"
-                    id="confirmUserPassword"
-                    placeholder="Confirmar senha" 
-                    required
-                />
-                <div class="error"></div>
-              </div>
-            </div>
-          
-        </div>
-        <div class="userAccount form-container3">
-          <input type="submit" value="Create Account" />
-        </form>
-          <p>Already have an account? <a href="">Log in</a></p>
-        </div>
+      <div class="credits">
+        <p>
+          Photo by <a href="http://">Halie West</a> on
+          <a href="http://"> Unsplash</a>
+        </p>
       </div>
     </div>
+    <div class="form">
+      <div class="form-container1">
+        <div class="form-text">
+          <h3>
+            This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.<br />
+            Sign up now to get started.
 
-    <script src="script.js"></script>
-  </body>
+            <p>You know you want to.</p>
+          </h3>
+        </div>
+      </div>
+      <div class="form-container2">
+        <h1>Lets do this!</h1>
+
+        <form action="action_page.php" method="get" id="form" novalidate>
+          <div class="form-line1">
+
+            <div class="firstName">
+              <label for="userFirstName">first name </label> <br /><input type="text" id="userFirstName" required
+                minlength="4" maxlength="15" placeholder="Nome" />
+              <div class="error"></div>
+            </div>
+
+
+            <div class="lastName">
+              <label for="userLastName">last name</label><br /><input type="text" id="userLastName" minlength="4"
+                maxlength="15" placeholder="Sobrenome" required />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="form-line2">
+            <div class="email">
+              <label for="userEmail">e-mail</label><br /><input type="email" id="userEmail"
+                placeholder="fulano@gmail.com " required />
+              <div class="error"></div>
+            </div>
+
+            <div class="phoneNumber">
+              <label for="userPhoneNumber">phone number</label> <br /><input type="tel" id="userPhoneNumber"
+                placeholder="12345-6789" required />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="form-line3">
+            <div class="password">
+              <label for="userPassword">password</label> <br /><input type="password" id="userPassword"
+                title="A senha deve conter pelo menos 1 número, 1 letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres. "
+                required placeholder="Senha" />
+              <div class="error"></div>
+            </div>
+
+            <div class="confirmPassword">
+              <label for="confirmUserPassword">confirm password</label> <br /><input type="password"
+                id="confirmUserPassword" placeholder="Confirmar senha" required />
+              <div class="error"></div>
+            </div>
+          </div>
+
+      </div>
+      <div class="userAccount form-container3">
+        <input type="submit" value="Create Account" />
+        </form>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
