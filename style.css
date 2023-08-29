@@ -14,7 +14,7 @@
   background: no-repeat url("assets/img1.avif");
   height: 100vh;
   background-size: cover;
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -31,7 +31,7 @@
   font-size: 7rem;
   font-family: norse-bold;
   position: absolute;
-  top: calc(100% / 3 - 133px);
+  top: calc(30% - 133px);
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   display: flex;
@@ -69,7 +69,7 @@
 
 .form-container1 {
   background-color: #f9fafb;
-  height: calc(100% / 3);
+  height: 30%;
   width: 100%;
   position: relative;
 }
@@ -96,7 +96,8 @@
 
 
 .form-container2 {
-  height: calc(100% / 2);
+  height: 50%;
+
   background-color: #fff;
   width:60%;
   margin-left: 5rem;
@@ -121,8 +122,6 @@
 .form-container2 form {
   display:flex;
   flex-direction: column;
-  
-  height:80%;
 }
 
 .form-container2 label {
@@ -179,4 +178,9 @@ width:30ch;
 
 .valid {
   border:1px solid green !important;
+}
+
+.form-container3 {
+  background-color: #f9fafb;
+  width:100%;
 }
